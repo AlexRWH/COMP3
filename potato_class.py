@@ -17,14 +17,3 @@ class Potato(Crop):
                 self._growth += self._growth_rate
         self._days_growing += 1
         self._update_status()
-
-def main():
-    potato_crop = Potato()
-    print(Potato_crop.report())
-    manual_grow(potato_crop)
-    print(Potato_crop.report())
-    manual_grow(potato_crop)
-    print(Potato_crop.report())
-
-if __name__ == "__main__":
-    main()

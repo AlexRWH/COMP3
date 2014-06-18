@@ -49,7 +49,7 @@ class Crop:
 def auto_grow(crop, days):
     #grow the crop
     for day in range(days):
-        light = random.rantint(1,10)
+        light = random.randint(1,10)
         water = random.randint(1,10)
         crop.grow(light, water)
 
