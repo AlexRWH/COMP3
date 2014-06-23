@@ -16,4 +16,4 @@ class Wheat(Crop):
             else:
                 self._growth += self._growth_rate
         self._days_growing += 1
-        self._update_status()
+        self.update_status()

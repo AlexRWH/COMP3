@@ -3,9 +3,10 @@ from animal_class import *
 class Cow(Animal):
     """A Generic Representation of a cow"""
 
-    def __init__(self):
+    def __init__(self,name):
         super().__init__(1,5,7)
         self._type = "Cow"
+        self._name = name
 
     def grow(self,food,water):
         if food >= self._food_need and water >= self._water_need:
@@ -16,4 +17,4 @@ class Cow(Animal):
             else:
                 self._weight += self._growth_rate
         self._days_growing += 1
-        self._update_status()
+        self.update_status()

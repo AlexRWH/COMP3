@@ -13,6 +13,7 @@ class Animal:
         self._water_need = water_need
         self._status = "Baby"
         self._type = "Generic"
+        self._name = "Generic"
         #the above attributes are prefixed with an underscore to indicate
         #that they should not be accessed directly from outwith the class
 
@@ -25,7 +26,7 @@ class Animal:
         #returns a dictionary containing the type, status, weight ,days growing
         return{'type':self._type, 'status':self._status ,'weight':self._weight ,'days growing':self._days_growing}
 
-    def _update_status(self):
+    def update_status(self):
         if self._weight > 50:
             self._status = "Mature"
         elif self._weight > 35:

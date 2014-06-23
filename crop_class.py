@@ -19,7 +19,7 @@ class Crop:
     #Methods
     def needs(self):
         #returns a dictionary containing the light and water needs
-        return {'light needs':self._light_needs ,'water needs':self._water_needs}
+        return {'light need':self._light_need ,'water need':self._water_need}
 
     #method to report and provide information about the current state of a crop
     def report(self):
